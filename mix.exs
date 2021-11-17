@@ -4,7 +4,7 @@ defmodule SpatialMap.MixProject do
   def project() do
     [
       app: :spatial_map,
-      version: "0.1.0",
+      version: "0.1.1",
       description: description(),
       package: package(),
       elixir: "~> 1.10",
@@ -24,14 +24,14 @@ defmodule SpatialMap.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps() do
     [
-      {:envelope, "~> 1.2.1"},
+      {:envelope, "~> 1.2"},
       {:geo, "~> 3.4"},
       {:topo, "~> 0.4.0"},
       {:jason, "~> 1.2"},
       {:poolboy, "~> 1.5"},
       {:spatial_hash, "~> 0.1.0"},
       {:telemetry, "~> 0.4"},
-      {:ex_doc, "~> 0.18", only: :dev},
+      {:ex_doc, "~> 0.24", only: :dev, runtime: false},
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
       {:benchee, "~> 1.0", only: :dev},
