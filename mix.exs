@@ -4,7 +4,7 @@ defmodule SpatialMap.MixProject do
   def project() do
     [
       app: :spatial_map,
-      version: "0.1.1",
+      version: "0.1.2",
       description: description(),
       package: package(),
       elixir: "~> 1.10",
@@ -26,7 +26,7 @@ defmodule SpatialMap.MixProject do
     [
       {:envelope, "~> 1.2"},
       {:geo, "~> 3.4"},
-      {:topo, "~> 0.4.0"},
+      {:topo, "~> 0.5"},
       {:jason, "~> 1.2"},
       {:poolboy, "~> 1.5"},
       {:spatial_hash, "~> 0.1.0"},
